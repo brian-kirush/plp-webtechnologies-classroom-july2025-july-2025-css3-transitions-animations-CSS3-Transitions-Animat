@@ -1,0 +1,33 @@
+/* styles.css */
+
+/* General Page Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+/* Box to Animate */
+#box {
+  width: 100px;
+  height: 100px;
+  background-color: cornflowerblue;
+  margin: 20px 0;
+  transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+/* Triggered Animation Class */
+.animate {
+  transform: translateX(200px) rotate(180deg);
+  background-color: tomato;
+}
+
+/* Keyframe Animation Example */
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-50px); }
+  100% { transform: translateY(0); }
+}
+
+.bouncing {
+  animation: bounce 1s infinite;
+}
